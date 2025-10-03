@@ -9,3 +9,9 @@ In order to pull the docker images present on the local docker registry add thse
 
 below ----> [plugins."io.containerd.grpc.v1.cri".registry.mirrors]   this line , if you do vim the line number would be 171 but dont rely on line number 
 just paste the 2 lines below this registry.mirros line thats it and dont forget to restart containerd otherwise the changes wont be reflected
+
+
+** calico.yaml **
+This file is important manifest file for kubernetes CNI which is Container Network Interface required for pod to pod communication
+To know more about this you can google and understand with examples. Without this file you cannot run your application as there will be no virtual IPS
+assigned to your pods.
